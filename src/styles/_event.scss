@@ -1,0 +1,54 @@
+@use 'variables';
+
+.event {
+    padding: 64px 0;
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__text {
+        max-width: 50%;
+
+        &__title {
+            margin-bottom: 24px;
+            color: variables.$corBotao;
+            line-height: 30px;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 50%;
+        height: 320px;
+        border-radius: 8px;
+    }
+
+    &__reverse--section {
+        background-color: variables.$corFundo;
+        color: #fff;
+
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__text {
+            max-width: 100%;
+
+            &__description {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__image {
+            width: 100%;
+        }
+    }
+}

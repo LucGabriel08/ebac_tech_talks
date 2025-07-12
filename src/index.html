@@ -1,15 +1,155 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/main.scss">
-</head>
-<body>
-    <h1>Ola</h1>
-    
-    <img src="./images/backend.png" alt="">
-    <script src="./scripts/main.js"></script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UFC Brasil | Evento</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/main.scss">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    </head>
+    <body>
+        <header class="hero">
+            <div class="container" data-aos="fade-up">
+                <img class="hero__logo" src="./images/logo_ufc.svg" alt="UFC logo">
+                <p class="hero__text">O maior evento de lutas do mundo está de volta ao <span>Brasil</span></p>
+                <span id="contador"></span>
+                <a href="#" class="button">
+                    Comprar Ingresso
+                </a>
+                <div class="hero__date">
+                    <strong>28/06/2025 às 23:00</strong>
+                    <small>T-Mobile Arena</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="event">
+            <div class="container" data-aos="fade-right">
+                <div class="event__text">
+                    <h2 class="event__text__title">Sobre</h2>
+                    <p class="event__text__description">
+                        O UFC (Ultimate Fighting Championship) é a maior organização de artes marciais mistas do mundo. Desde sua fundação em 1993, o UFC tem revolucionado o mundo das lutas, proporcionando combates eletrizantes e reunindo os melhores lutadores de várias modalidades. Este evento no Brasil é mais uma oportunidade para os fãs brasileiros testemunharem a emoção do UFC ao vivo e celebrarem os talentos nacionais e internacionais.
+                    </p>
+                </div>
+                <img class="event__image" src="./images/imagem_ufc_brasil.webp" alt="ufc Brasil com Bandeira">
+            </div>
+        </section>
+        <section class="event event__reverse--section">
+            <div class="container" data-aos="fade-left">
+                <div class="event__text">
+                    <h2 class="event__text__title">Nossos eventos</h2>
+                    <p class="event__text__description">
+                        O UFC realiza eventos espetaculares ao redor do mundo, e o Brasil é um dos destinos mais emocionantes. Em 2025, teremos uma série de lutas imperdíveis com os melhores lutadores brasileiros e internacionais. Prepare-se para assistir a combates eletrizantes, com performances que ficarão na história do MMA. Não perca a chance de ver seus lutadores favoritos em ação, em um evento que promete muita emoção e adrenalina.
+                    </p>
+                </div>
+                <img class="event__image" src="./images/imagem_ufc_bandeira.jpg" alt="ufc Brasil">
+            </div>
+        </section>
+
+        <section class="streaming">
+            <div class="container" data-aos="fade-down">
+                <h2 class="streaming__title">OU ASSINE O FIGHT PASS</h2>
+                <p class="streaming__subtitle">
+                    Escolha seu plano
+                </p>
+                <ul class="streaming__list">
+                    <li class="streaming__list__item">
+                        <h3>Assinatura Anual</h3>
+                        <strong>R$ 14,90</strong>
+                        <p>
+                            **economize 2 meses <br>
+                            - Acesso a todas as lutas ao vivo e on-demand <br>
+                            - Arquivo completo de eventos passados <br>
+                            - Séries e documentários exclusivos <br>
+                            - Acesso prioritário a pré-vendas de ingressos
+                        </p>
+                        <a href="#" class="button--streaming">Assinar Anual</a>
+                    </li>
+                    <li class="streaming__list__item">
+                        <h3>Assinatura Mensal</h3>
+                        <strong>R$ 29,90</strong>
+                        <p>
+                            - Acesso a todas as lutas ao vivo e on-demand <br>
+                            - Arquivo completo de eventos passados <br>
+                            - Séries e documentários exclusivos <br>
+                            - Acesso prioritário a pré-vendas de ingressos
+                        </p>
+                        <a href="#" class="button--streaming">Assinar Mensal</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container" data-aos="fade-up">
+                <h2 class="benefits__title">O MELHOR DA LUTA NO UFC FIGHT PASS</h2>
+                <ul class="benefits__list">
+                    <li class="benefits__list__item">
+                        <img src="./images/imagem_ufcfp.jpg" alt="pré venda">
+                        <h3>Acesso a Pré-Venda</h3>
+                        <p>
+                            Tenha acesso prioritário na compra de ingressos de todos os eventos do UFC no Brasil.
+                        </p>
+                    </li>
+                    <li class="benefits__list__item">
+                        <img src="./images/imagem_ufcfp2.jpg" alt="tuf">
+                        <h3>Séries e Filmes</h3>
+                        <p>
+                            Produções originais, documentários e filmes com o melhor do universo da luta, MMA, jiu jtsu, e muito mais.
+                        </p>
+                    </li>
+                    <li class="benefits__list__item">
+                        <img src="./images/imagem_ufcfp3.jpg" alt="luta antiga">
+                        <h3>Arquivo de Lutas</h3>
+                        <p>
+                            O maior arquivo de artes marciais do mundo. Todos os eventos do UFC, Pride, Strikeforce e outros.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <img class="footer__image" src="./images/ultiman_logo_75.png" alt="logo ultiman ufc">
+                <ul class="footer__buttons">
+                    <li class="footer__buttons__item">
+                        <a href="#">Ajuda</a>
+                    </li>
+                    <li class="footer__buttons__item">
+                        <a href="#">Termos de Uso</a>
+                    </li>
+                    <li class="footer__buttons__item">
+                        <a href="#">Politica de Privacidade</a>
+                    </li>
+                </ul>
+                <ul class="footer__icons">
+                    <li class="footer__icons__item">
+                        <a href="#">
+                            <box-icon type='logo' name='instagram' color="#333333"></box-icon>
+                        </a>
+                    </li>
+                    <li class="footer__icons__item">
+                        <a href="#">
+                            <box-icon type='logo' name='facebook' color="#333333"></box-icon>
+                        </a>
+                    </li>
+                    <li class="footer__icons__item">
+                        <a href="#">
+                            <box-icon type='logo' name='twitter' color="#333333"></box-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+    </html>
